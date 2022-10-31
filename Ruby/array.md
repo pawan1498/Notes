@@ -68,3 +68,16 @@ elements as possible, while still leaving one element for every other variable.
 - a & b = element that appear in both  
 - a | b = union of two array 
   
+
+# first vs take vs limit 
+
+- `take` The Take method returns a record without any implied order
+  -  User.take(5)
+     => User Load (0.5ms)  SELECT "users".* FROM "users" LIMIT $1  [["LIMIT", 5]]
+- `first` The First method is similar to #take, but it returns the first record 
+- `limit` The Limit method specifies a limit for the number of records to retrieve.Unlike the previous two methods, #limit requires a parameter. It always returns an Active Record Relation.
+  - Since #limit returns an Active Record Relation, this means that you can continue scoping afterwards
+  - User.limit(5).where(id: 1)
+    User Load (0.4ms)  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2  [["id", 1], ["LIMIT", 5]]
+
+

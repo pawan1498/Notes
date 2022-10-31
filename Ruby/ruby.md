@@ -15,6 +15,12 @@
 ## self and private method 
 - 
 
+## `.methods`
+- it return all the methods associated with particular object like : instance_method , class method , method from inherited class 
+- if you want method that you make only => `$ .methods(false)`
+- instance method => `class_name.instance_method`
+- singletin_method => `class_name.singleton_methods1`
+  
 
 ## class Introspection 
 

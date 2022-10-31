@@ -16,3 +16,5 @@
 
 # ! after method 
 - Bang or exclamation mark means that you are making a permanent saved change in your code.
+
+# collect method 

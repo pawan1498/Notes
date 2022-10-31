@@ -30,3 +30,4 @@
 `('a'..'z').cover?("c")`
 
 ## diff between include? and cover? (important!)
+- 
