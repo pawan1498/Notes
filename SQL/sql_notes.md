@@ -72,7 +72,14 @@
   `SELECT LEN('W3Schools.com'); `
 
 ## MySQL NULL Values
-- 
+- `SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NOT NULL;`
+  
+
+  
+
+
+-------------------------------------------------------------
+# JOINS 
 
 
 
