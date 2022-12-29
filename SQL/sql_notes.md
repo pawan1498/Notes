@@ -33,7 +33,7 @@
   2. LIKE : search for pattern 
     `SELECT * FROM Customers WHERE City LIKE 'se%';`\
     this give simialr pattern string 
-
+ 
 
 
   3. IN : To specify multiple possible values for a column	
@@ -51,6 +51,9 @@
 - is used to sort result in ascending or descending 
 - it sort the records **Ascending** by default 
   `SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;`
+
+  select CITY,LENGTH(CITY) from STATION order by Length(CITY) asc, CITY limit 1; 
+  select CITY,LENGTH(CITY) from STATION order by Length(CITY) desc, CITY limit 1; 
 
 ### ORDER BY Several Columns Example
 - sort according to more than 1 column 
@@ -75,11 +78,32 @@
 - `SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NOT NULL;`
   
 
-  
+## SQL TOP, LIMIT 
+- it return the record with given limits 
+  `SELECT * FROM Customers LIMIT 3; `
+   it return first 3 record
 
+## The SQL MIN() and MAX() Functions
+- it return min and max value 
+ `SELECT MIN(Price) AS SmallestPrice FROM Products;`
+
+
+## The SQL COUNT(), AVG() and SUM() Functions
+- it return the related value to function name.
+
+## round 
+- it round off the float to integer 
+- decimal value to non-decimal 
 
 -------------------------------------------------------------
 # JOINS 
 
 
 
+-------------------------------------------------------------
+# sql server function 
+1. RIGHT : The RIGHT() function extracts a number of characters from a string (starting from right).
+   `RIGHT(string, number_of_chars)`
+2. Left : vice versa of right 
+3. LEN :  return lenght of string.
+4. 
