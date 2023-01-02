@@ -1,30 +1,57 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-  vector <int> arr = {2,2,5,5,5,1};
-  int k = 3;
+int main()
+{
+  vector<int> arr = {5, 5, 5, 1, 23, 3};
+  int p = 3;
+  vector<int> res;
   unordered_map<int, int> umap;
-
-  for (auto i = 0,j=i+k-1; j < arr.size(); i++,j++)
+  int min_size = INT_MAX;
+  int curr_size = 0;
+  for (int i = 0; i < arr.size() - p + 1; i++)
   {
-    int itr = i ; 
     umap.clear();
-    while(itr<=arr.size()){
-      umap[arr[itr++]]++;
-    }
-   for (auto x : umap)
-    cout << x.first << " " <<
-            x.second << endl;
+    for (int j = i; j < arr.size(); j++)
+    {
 
-  cout << "-------------" << endl;
+      umap[arr[j]]++;
+      for (auto u : umap)
+      {
+        cout << u.first << " " << u.second << endl;
+      }
+      if (umap.size() >= p)
+      {
 
-    if (umap.size() == k){
-      cout << i << " " << j << endl;
-      return 0;
+        // cout << "pppppppppppppppppppppppppppp";
+        cout << i << "  ----" << j << endl;
+        curr_size = j - i + 1;
+        if (curr_size < min_size)
+        {
+          min_size = curr_size;
+          res.clear();
+          res.push_back(i);
+          res.push_back(j);
+          if (curr_size == p)
+            return 0;
+        }
+        break;
+      }
+      else
+      {
+        if(umap[arr[j]] > 1){
+          break; 
+        }
+      }
     }
+    cout << "=--------------------------" << endl;
   }
 
+  // if (res.size() > 0)
+  // cout << "hey";
+  for (auto i : res)
+  {
+    cout << i << " " << endl;
+  }
 
-   
   return 0;
 }
