@@ -23,5 +23,3 @@
 * reverse string 
 * remove element 
 
-
-
