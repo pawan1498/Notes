@@ -7,4 +7,19 @@
 - ** we always keep one pointer behind the other and use other one to expand window size.
 
 2. Opposite-directional 
+
+
+### coding problem related to Equi-Directional 
+* Find max sum of contagious subarray of size k 
+* middle node of linked list 
+* linked list cycle 
+* longest substring without repeating chracter 
+* remove duplicates from sorted array 
  
+### coding problem related to Opposite-Direction 
+* Two sum || sorted array 
+* valid Palindrome 
+* move zeroes 
+* reverse string 
+* remove element 
+
