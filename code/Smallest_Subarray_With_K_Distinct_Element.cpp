@@ -9,16 +9,22 @@ int main(){
   {
     int itr = i ; 
     umap.clear();
-    while(itr<=j){
+    while(itr<=arr.size()){
       umap[arr[itr++]]++;
     }
+   for (auto x : umap)
+    cout << x.first << " " <<
+            x.second << endl;
 
+  cout << "-------------" << endl;
 
     if (umap.size() == k){
       cout << i << " " << j << endl;
       return 0;
     }
   }
-  
+
+
+   
   return 0;
 }
