@@ -23,3 +23,11 @@
 * reverse string 
 * remove element 
 
+# sliding window 
+- it is an optimization technique used in array like data structure. 
+
+## How to identify sliding window 
+- ques type : find subarray, with given condition
+
+## ques 
+- Max_sum_subarray_with_size_k
