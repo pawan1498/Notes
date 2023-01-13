@@ -2,56 +2,57 @@
 using namespace std;
 int main()
 {
-  vector<int> arr = {5, 5, 5, 1, 23, 3};
+  vector<int> arr = {1, 2, 2, 3, 1, 3, 1, 1, 2, 3};
   int p = 3;
   vector<int> res;
   unordered_map<int, int> umap;
   int min_size = INT_MAX;
   int curr_size = 0;
-  for (int i = 0; i < arr.size() - p + 1; i++)
+  int start = 0;
+  for (int i = 0; i < arr.size(); i++)
   {
-    umap.clear();
-    for (int j = i; j < arr.size(); j++)
+    umap[arr[i]]++;
+
+    if (umap.size() >= p)
     {
-
-      umap[arr[j]]++;
-      for (auto u : umap)
-      {
-        cout << u.first << " " << u.second << endl;
-      }
-      if (umap.size() >= p)
+      while (start < i)
       {
 
-        // cout << "pppppppppppppppppppppppppppp";
-        cout << i << "  ----" << j << endl;
-        curr_size = j - i + 1;
-        if (curr_size < min_size)
+        if (umap.size() < p)
         {
-          min_size = curr_size;
-          res.clear();
-          res.push_back(i);
-          res.push_back(j);
-          if (curr_size == p)
-            return 0;
+          break;
         }
-        break;
-      }
-      else
-      {
-        if(umap[arr[j]] > 1){
-          break; 
+        else
+        {
+          if (!res.empty())
+          {
+            cout << "---";
+
+            if ((res[1] - res[0]) > (i - start))
+            {
+              res.clear();
+              res.push_back(start);
+              res.push_back(i);
+            }
+          }
+          else
+          {
+            res.push_back(start);
+            res.push_back(i);
+          }
+        }
+
+        umap[arr[start++]]--;
+        if (umap[arr[start - 1]] == 0)
+        {
+          umap.erase(arr[start - 1]);
         }
       }
     }
-    cout << "=--------------------------" << endl;
   }
-
-  // if (res.size() > 0)
-  // cout << "hey";
-  for (auto i : res)
+  for (auto x : res)
   {
-    cout << i << " " << endl;
+    cout << x << "-->";
   }
-
   return 0;
 }

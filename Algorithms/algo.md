@@ -31,3 +31,4 @@
 
 ## ques 
 - Max_sum_subarray_with_size_k - https://github.com/w3villa-pawan/Notes/blob/main/code/MaximumSumSubarrayOfSizeK.cpp
+- Smallest_subarray_with_K_Distinct_Element - https://github.com/w3villa-pawan/Notes/blob/main/code/Smallest_Subarray_With_K_Distinct_Element.cpp
