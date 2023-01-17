@@ -1,3 +1,7 @@
+// approach 
+// - Continiously add element in window untill you find subarray with K distinct element, then update the indices in result 
+// - then decrease the current window size (until the window size decrease to 0) and check for condition , if you find new subarray with shortest length then update result 
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
