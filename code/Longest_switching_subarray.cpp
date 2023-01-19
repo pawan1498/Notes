@@ -21,19 +21,14 @@ int main()
     while (i < n)
     {
       
-        if (arr[i] == arr[i - 2])
+        if (arr[i] != arr[i - 2])
         {
-          i++;
-        }
-        else
-        {
-          // cout <<"hdjsh          " << i << endl ; 
           if (ans < (i - start))
             ans = i - start;
           
           start = i - 1;
-          i++;
         }
+        i++;
      
     }
   }
