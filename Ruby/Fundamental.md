@@ -17,4 +17,27 @@
 # ! after method 
 - Bang or exclamation mark means that you are making a permanent saved change in your code.
 
+# ? after method 
+- it tell function should return boolean value 
+
 # collect method 
+
+# Argument 
+- when we pass multiple arguments in function call 
+  - get it directly in array with single array name fun(*args)
+  - * before arguments name took all the arguments are store them in array 
+
+- get argument name with semicolon 
+  - when we have multiple arguments and confuse with arguments and parameter name 
+  - then get arguments with (name:) 
+  - it will be more accurate 
+
+# super 
+- super method call the parent class method 
+- super get all the arguments 
+
+
+# super vs super()
+- super() use for exact arguments
+- 
+
