@@ -41,3 +41,7 @@
 - super() use for exact arguments
 - 
 
+# self in ruby 
+- It’s a Ruby keyword that gives you access to the current object.
+- it is a magical thing in ruby 
+- when we write with in class it act as class object 
