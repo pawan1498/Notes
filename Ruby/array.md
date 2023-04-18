@@ -37,6 +37,9 @@
       numbers.select { |n| n > 10 }
       # => 12, 49
     `
+- In each_with_index first argument act as element and second act as index 
+  `  each_with_index do |element, index| `
+  
 ## array operation 
 - sort 
 - unique 
