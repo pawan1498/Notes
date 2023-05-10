@@ -4,6 +4,6 @@ Ques :
 3. attribute accessor 
 4. super vs super()
 5. what is module 
-6. 
+6. access_control ( public, private, protected)
 
 

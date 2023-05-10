@@ -22,7 +22,7 @@
 ## iteration 
 - each 
 - each_with_index 
-- map = doesn't modify array 
+- map = doesn't modify array ( insted it return a new array )
 - map! = modify the array directly 
 - flatten 
 - flat_map = this combine the effect of flat and map (flat + map)
