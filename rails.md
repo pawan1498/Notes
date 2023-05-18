@@ -15,3 +15,5 @@ end
 
 
  
+## Rails Forms
+1. form_for 
