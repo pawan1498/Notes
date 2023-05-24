@@ -43,12 +43,13 @@
 
 
 ## sort_012
+- TC - O(n)
 - condition for this sorting algo : Array contain only 3 type of elements with any frequency 
 - Approach : 
   - we maintain 3 pointer low, mid , high 
   - from start to low pointer all elements should be 0.
   - from low to mid all are 1.
-  - from low to high (unsorted array)
+  - from mid to high (unsorted array)
   - from high to end all are 2. 
 
 - we need to clear the unsorted array ( low to high)
