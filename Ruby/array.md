@@ -84,3 +84,10 @@ elements as possible, while still leaving one element for every other variable.
     User Load (0.4ms)  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2  [["id", 1], ["LIMIT", 5]]
 
 
+## array tricks 
+1.  arr = [[1,2], [3,4], [55,6]]
+
+ x,y = arr[0]
+ then x become 1, y become 2
+
+ 2. 

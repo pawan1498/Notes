@@ -21,6 +21,7 @@
 - it tell function should return boolean value 
 
 # collect method 
+- it execute the block for every element of collection/array and return a value 
 
 # Argument 
 - when we pass multiple arguments in function call 
@@ -45,3 +46,8 @@
 - It’s a Ruby keyword that gives you access to the current object.
 - it is a magical thing in ruby 
 - when we write with in class it act as class object 
+
+
+# collect vs select 
+- collect return boolean and select return actual value of an array 
+- “.collect” runs a block of code on every item in a collection/array and returns the value. “.select” returns only the values in a collection/array that meet the criteria specified in the code block.

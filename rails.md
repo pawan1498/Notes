@@ -1,3 +1,6 @@
+# kill rails server 
+- pkill -9 -f puma
+
 #Delegate 
 - it help to access attributes of associated model directly
 class Order

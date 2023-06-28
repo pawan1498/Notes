@@ -392,3 +392,32 @@ default sort)
 - object ka singleton_method is different , it is associated with particular object , which reside in singleton_class of particular object 
 
 -------------------------------------------------------------------------------------
+
+# attribute accessor 
+- Instance variable in a class can not be access from outside of class 
+- it can access from inside the class only 
+
+Example : 
+class Fruit 
+  def initialize (name)
+    @name = name
+  end
+
+  def name 
+    p @name 
+  end
+end 
+
+Apple = Fruit.new('apple')
+Apple.@water -> give error 
+
+
+- Another we can do is attribute accessor 
+  class Fruit 
+    attr_accessor :name
+    def initialize (name)
+      @name = name
+    end
+  end
+
+-------------------------------------------------------------------------------------------------------------------------------------------
