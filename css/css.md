@@ -98,5 +98,8 @@ selector cheat sheet : https://drive.google.`  `1		`1	xcom/file/d/1LED5oRVfC9_sA
 	
 ### if 2 program have same specificity score than new instance win 
 
+----------------------------------------------------------------------------------------------------------
 # inheritance 
 
+----------------------------------------------------------------------------------------------------------
+# sizing unit 

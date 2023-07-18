@@ -15,7 +15,8 @@ class Tree
     @root_node = TreeNode.new(root_value)
   end 
 
-  def insert root,data 
+  def insert data 
+    root = root_node
     if root==nil 
         return Node.new(data)
     elsif root.value<data
@@ -34,12 +35,14 @@ class Tree
     preorder root.left
     preorder root.right
 end
-
+def test 
+  p "hi "
+  p root_node.left 
+  p " hello"
+end 
 end 
 
 x  = Tree.new 12
-x.insert(x.root_node,90)
-x.insert(x.root_node,9)
-p "dsk"
-p x.root_node.value
-x.preorder x.root_node
+p x.insert(90)
+x.test
+p "----"*10
