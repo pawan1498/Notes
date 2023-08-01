@@ -35,7 +35,7 @@
 # selector 
 
 selector cheat sheet : https://drive.google.`  `1		`1	xcom/file/d/1LED5oRVfC9_sA9JQJsrzQGEQsGveImO_/view?usp=drive_link
-
+>
 
 ----------------------------------------------------------------------------------------------
 
@@ -103,3 +103,14 @@ selector cheat sheet : https://drive.google.`  `1		`1	xcom/file/d/1LED5oRVfC9_sA
 
 ----------------------------------------------------------------------------------------------------------
 # sizing unit 
+
+
+----------------------------------------------------------------------------------------------------------
+# shortcut key in vs code 
+- add margin : m0
+- add padding : p0 
+- add marging + add padding : m0+p0
+- marging top right bottom left : m1-2-3
+- add div with class : .class_name  
+- add div with id : .id_name  
+  
