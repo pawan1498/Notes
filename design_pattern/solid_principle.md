@@ -20,7 +20,7 @@
 - let take a class computer it need Mouse and Keyboard 
 - let create a mouse class 
 
-Advantages of these priciple 
+Advantages of these pricip  le 
 1. avoid duplicate code 
 2. easy to maintain 
 3. easy to understand 

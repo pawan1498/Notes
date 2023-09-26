@@ -60,3 +60,8 @@
 - **the contained objects won't be frozen.** 
   - like Array contain other object 
   - freezing is only one level deep 
+
+## symbol 
+- Confusion between symbol and variable 
+ - symbol are values 
+ - variable point to values 
