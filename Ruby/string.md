@@ -24,7 +24,7 @@
   - reverse 
   - include?
   - start_with?
-  - end_with?
+  - end_with? 
 
 ## Working with Characters
 - `each_char and char` 
