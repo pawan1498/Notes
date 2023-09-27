@@ -10,3 +10,8 @@ After merge ->
 ## Rebase 
 - Rebase have linear commit history 
 - It overwrite the commit history i.e first it remove all commits of base branch and add it to the bottom fff
+
+
+## revert 
+- revert can be use on a specific commit, it create a new commit which revert the commit you provide. 
+  

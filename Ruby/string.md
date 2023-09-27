@@ -7,6 +7,9 @@
 
 ## Manipulation 
 - gsub
+  it is used for substiute 
+  puts "Sample".gsub!(/[a]/, '*')         => S*mple        
+
 - split = "pawan-sharma".split('-') => ["pawan" , "sharma"]
 
 ## Substring 

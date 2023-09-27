@@ -11,3 +11,7 @@ Ques :
 10. define Routes 
 11. How routes Work 
 12. require/load  
+13. scope 
+14. scope vs instance method
+15. callbaks
+16. 
