@@ -421,3 +421,18 @@ Apple.@water -> give error
   end
 
 -------------------------------------------------------------------------------------------------------------------------------------------
+
+## const_get 
+- this method is used to get the constant value within class
+ex: class Test 
+	MY_CONST = "hi pawan"
+    end 
+Note : we can not access constant directly 
+so there is a method name const_get which will help to get value of constant 
+
+- Test.const_get("MY_CONST") 
+ -> "hi pawan"
+
+Note : furthur exploration needed. 
+
+------------------------------------------------------------------------------------------------------------------------------------------

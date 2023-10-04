@@ -14,4 +14,8 @@ Ques :
 13. scope 
 14. scope vs instance method
 15. callbaks
-16. 
+16. webserver and application server 
+17. around filter 
+18. flatten vs flatten!
+19. hash with default value 
+20. 
