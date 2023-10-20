@@ -47,3 +47,12 @@
 
       ##### bound and unbound method 
       
+## Monkey patching 
+- Monkey patching is a technique in Ruby metaprogramming that allows you to modify or extend the behavior of an existing class or module at runtime. It involves reopening the class or module and adding or modifying methods or attributes.
+- This can be a powerful tool, but it can also be dangerous if not used carefully, as it can cause unexpected behavior or conflicts with other code.
+
+### Defined_method : 
+- The define_method is a Ruby method that allows developers to define new methods at runtime. This method takes a block of code and creates a new method that executes that code. This can be useful for creating dynamic methods that are generated at runtime.
+
+### method_missing : 
+- The method_missing is a method that is called when Ruby cannot find a method in an object's class or any of its ancestors. This method can be used to dynamically handle method calls and generate methods at runtime.

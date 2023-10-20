@@ -1,3 +1,8 @@
 # Design pattern 
-- The Observer Pattern defines a one-to-many dependency between objects sothat when one object changes state, all its dependents are notified and updated automatically.
+
+1. Creational : Object creation mechanism, Increase flixibility and reuse of code. 
+2. Structural : Assemble object and classes into larger structure while keeping this structure flexible and effecient. 
+3. Behvioural : These Pattern are concerned with algorithm and assignment of Responsiblities between objects. 
+   
+
 
