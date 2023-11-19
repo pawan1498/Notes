@@ -64,4 +64,7 @@ then you can add validation of
      validates :registration_number, length: { is: 6 }
   `
 
-  
+7. numericality 
+8. presence : This helper validates that the specified attributes are not empty.
+```ruby
+   validates :name, :login, :email, presence: true
