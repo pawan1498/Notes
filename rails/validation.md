@@ -66,5 +66,24 @@ then you can add validation of
 
 7. numericality 
 8. presence : This helper validates that the specified attributes are not empty.
-```ruby
-   validates :name, :login, :email, presence: true
+  ```ruby
+  validates :name, :login, :email, presence: true
+
+9. absence : oppositr of presence
+
+10.  uniqueness:  attribute's value is unique right before the object gets saved.
+  ```ruby 
+  validates :email, uniqueness: true
+
+## Perfrming custom validation 
+
+ validate :expiration_date_cannot_be_in_the_past,
+    :discount_cannot_be_greater_than_total_value
+
+  def expiration_date_cannot_be_in_the_past
+    if expiration_date.present? && expiration_date < Date.today
+      errors.add(:expiration_date, "can't be in the past")
+    end
+  end
+
+
