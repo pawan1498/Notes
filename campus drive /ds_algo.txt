@@ -1,0 +1,27 @@
+Array : 
+- Find the Missing Number:
+- Rotate Array: [5,4,3,2,1] -> [1,2,3,4,5]
+- Two Sum:  Given an array of integers, find two numbers such that they add up to a specific target.
+- Remove Duplicates: from a sorted array in-place, and return the new length of the array. Do not allocate extra space for another array.
+- Find Peak Element: A peak element in an array is an element which is greater than or equal to its neighbors. Find the peak element and return its index.
+- Kth Largest Element in an Array: Find the kth largest element in an unsorted array.
+
+
+
+
+string : 
+- Reverse a String
+- Valid Palindrome: Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+- String to Integer (atoi):
+-* Valid Parentheses:
+
+
+
+-* frequency of patient according to their age. 
+- 
+
+DS structure : 
+- What is array 
+- what is linked list. 
+- binary search 
+- 
