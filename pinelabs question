@@ -1,0 +1,21 @@
+What is Deadlocks in Ruby
+Status Codes - 
+Instant variable vs Class Variable - 
+Load vs require - 
+Strong params - 
+Association
+Validation
+migration(change, up down) -
+Rails
+Has_many through vs has and belong to many - 
+Class vs Self - 
+Include vs extend vs prepend - 
+Polymorphic association
+Has one vs has many
+ORM
+How active record query map to sql
+Multiple vs multilevel inheritance
+Rails Models controllers and views
+Worked on ERB and slim views
+All the commonly used callbacks and validations in models
+Active storage
