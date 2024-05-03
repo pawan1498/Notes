@@ -63,4 +63,20 @@ Ans:
 
 
 # Rails 7 New Updates 
-1. 
+
+Rails 5
+Action Cable introduced
+Api only application introduced (rails new my_api --api)
+Deprecated all *_filter callbacks in favor of *_action callbacks.
+
+
+Rails 6
+Webpacker as the default js compiler.
+Action text were added - Trix editor introduced which can do This editor handles everything from formatting, quotes, lists and embedded images and galleries. Any embedded images or attachments are automatically stored using Active Storage and associated with the RichText model.
+
+
+Rails 7
+ Turbo and Stimulus (from Hotwire) were introduced by default
+ @categories = Category.load_async,  can use when querying data to fetch results in the background. This is especially important when you need to load several un-related queries from a controller action.
+
+# 
