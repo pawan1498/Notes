@@ -79,4 +79,5 @@ Rails 7
  Turbo and Stimulus (from Hotwire) were introduced by default
  @categories = Category.load_async,  can use when querying data to fetch results in the background. This is especially important when you need to load several un-related queries from a controller action.
 
-# 
+# Include Vs JOIN
+- 
