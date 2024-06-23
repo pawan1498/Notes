@@ -46,3 +46,46 @@
         ### The find_by! method behaves exactly like find_by, except that it will raise ActiveRecord::RecordNotFound if no matching record is found. For example:
 
 2. Retrieving object in batches : 
+
+
+
+
+
+
+
+
+
+
+
+# N+1 query 
+- The N+1 query problem is a common performance issue in database-backed applications like those using Ruby on Rails with ActiveRecord. It occurs when an application makes one query to fetch a collection of objects and then makes an additional query for each object in that collection to fetch associated objects.
+
+SELECT * FROM posts
+For each post, SELECT * FROM comments WHERE post_id = ?
+
+- Resolving the N+1 Query Problem
+    To resolve this, you can use includes, preload, or eager_load to load associated records in a single query.
+
+## using includes
+- @posts = Post.includes(:comments)
+- SQL : 
+    SELECT * FROM posts
+    SELECT * FROM comments WHERE post_id IN (1, 2, 3, ...)
+
+
+## using preload
+- it works same as include 
+
+## using eager_load
+- @posts = Post.eager_load(:comments)
+- SQL : 
+    - SELECT posts.*, comments.*
+        FROM posts
+        LEFT OUTER JOIN comments ON comments.post_id = posts.id
+
+## Choosing Between includes, preload, and eager_load
+- Use includes when you want ActiveRecord to decide whether to use preload or eager_load based on the context.
+- Use preload when you want to ensure that associated records are loaded in separate queries.
+- Use eager_load when you want to force an SQL join.
+
+ 
